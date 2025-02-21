@@ -3,5 +3,5 @@
 -- Add any additional options here
 --
 -- vim.opt.colorcolumn = "80"
--- vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.snacks_animate = false
