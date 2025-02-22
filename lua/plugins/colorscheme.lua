@@ -5,10 +5,12 @@ return {
   { "nyoom-engineering/oxocarbon.nvim", name = "oxocarbon" },
   { "dasupradyumna/midnight.nvim", name = "midnight" },
   { "dgox16/oldworld.nvim", name = "oldworld" },
+  { "vague2k/vague.nvim", name = "vague", opts = { transparent = true } },
+
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "rose-pine",
     },
   },
 }
