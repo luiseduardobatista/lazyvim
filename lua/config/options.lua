@@ -5,3 +5,4 @@
 -- vim.opt.colorcolumn = "80"
 vim.g.lazyvim_python_lsp = "basedpyright"
 vim.g.snacks_animate = false
+vim.opt.cursorlineopt = "number" -- Destaque apenas no número da linha
