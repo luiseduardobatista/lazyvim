@@ -1,6 +1,6 @@
 return {
   { "rose-pine/neovim", name = "rose-pine", opts = { styles = { transparency = true } } },
-  { "ellisonleao/gruvbox.nvim", name = "gruvbox" },
+  { "ellisonleao/gruvbox.nvim", name = "gruvbox", opts = { contrast = "hard" } },
   { "folke/tokyonight.nvim", name = "tokyonight", opts = { transparent = true } },
   { "nyoom-engineering/oxocarbon.nvim", name = "oxocarbon" },
   { "dasupradyumna/midnight.nvim", name = "midnight" },

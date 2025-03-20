@@ -3,6 +3,8 @@ return {
   opts = function(_, opts)
     opts.winopts = opts.winopts or {}
     opts.winopts.preview = { hidden = "hidden" } -- Desativa o preview por padrão
+    opts.oldfiles = opts.oldfiles or {}
+    opts.oldfiles.include_current_session = true -- Inclui buffers antigos no oldfiles
 
     opts.keymap = opts.keymap or {}
     opts.keymap.builtin = opts.keymap.builtin or {}

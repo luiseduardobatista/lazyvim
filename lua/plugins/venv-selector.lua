@@ -4,9 +4,4 @@ return {
   opts = {
     auto_refresh = true,
   },
-  -- event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
-  keys = {
-    { "<leader>vs", "<cmd>VenvSelect<cr>" },
-    { "<leader>vc", "<cmd>VenvSelectCached<cr>" },
-  },
 }
