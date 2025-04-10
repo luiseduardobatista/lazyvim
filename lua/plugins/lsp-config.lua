@@ -3,7 +3,6 @@ return {
   opts = {
     diagnostics = {
       signs = false,
-      -- underline = false,
     },
   },
 }
