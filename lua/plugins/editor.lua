@@ -23,6 +23,12 @@ end
 
 return {
   {
+    "smjonas/inc-rename.nvim",
+    opts = {
+      save_in_cmdline_history = false,
+    },
+  },
+  {
     "ThePrimeagen/refactoring.nvim",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
@@ -154,5 +160,8 @@ return {
         end)
       end
     end,
+  },
+  {
+    "chaoren/vim-wordmotion",
   },
 }
