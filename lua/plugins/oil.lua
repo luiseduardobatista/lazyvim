@@ -5,7 +5,19 @@ return {
     view_options = {
       show_hidden = true,
       is_always_hidden = function(name, _)
-        return name == ".." or name == ".git"
+        local always_hidden = {
+          [".git"] = true,
+          [".idea"] = true,
+          [".gitlab"] = true,
+          [".."] = true,
+        }
+
+        if always_hidden[name] then
+          return true
+        end
+
+        -- Verifica se termina com '._cache' ou '._cache/'
+        return name:match("._cache/?$") ~= nil
       end,
     },
   },
