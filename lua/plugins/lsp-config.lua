@@ -4,5 +4,6 @@ return {
     diagnostics = {
       signs = false,
     },
+    inlay_hints = { enabled = false },
   },
 }
