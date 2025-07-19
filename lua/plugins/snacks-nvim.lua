@@ -3,5 +3,6 @@ return {
   opts = {
     dashboard = { enabled = false },
     scroll = { enabled = false },
+    notifier = { enabled = true },
   },
 }
