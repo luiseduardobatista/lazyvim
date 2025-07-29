@@ -27,9 +27,9 @@ vim.api.nvim_create_user_command("DeleteBlankLines", function(opts)
   local deleted = lines_before - lines_after
 
   if deleted > 0 then
-    print(string.format("Deleted %d blank line%s", deleted, deleted == 1 and "" or "s"))
+    vim.notify(string.format("Deleted %d blank line%s", deleted, deleted == 1 and "" or "s"))
   else
-    print("No blank lines found")
+    vim.notify("No blank lines found", vim.log.levels.INFO)
   end
 end, {
   desc = "Deleta linhas em branco no buffer ou seleção",
