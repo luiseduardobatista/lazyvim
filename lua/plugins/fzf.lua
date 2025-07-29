@@ -2,7 +2,11 @@ return {
   "ibhagwan/fzf-lua",
   opts = {
     winopts = {
-      preview = { hidden = false },
+      preview = {
+        hidden = false,
+        layout = "horizontal",
+        horizontal = "right:45%",
+      },
     },
     oldfiles = {
       include_current_session = true,

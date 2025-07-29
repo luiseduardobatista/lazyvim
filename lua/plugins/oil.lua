@@ -1,7 +1,7 @@
 return {
   "stevearc/oil.nvim",
   opts = {
-    default_file_explorer = true,
+    default_file_explorer = false,
     view_options = {
       show_hidden = true,
       is_always_hidden = function(name, _)
@@ -11,11 +11,9 @@ return {
           [".gitlab"] = true,
           [".."] = true,
         }
-
         if always_hidden[name] then
           return true
         end
-
         -- Verifica se termina com '._cache' ou '._cache/'
         return name:match("._cache/?$") ~= nil
       end,
