@@ -4,6 +4,11 @@ return {
     diagnostics = {
       signs = false,
     },
+    servers = {
+      rust_analyzer = {
+        mason = false,
+      },
+    },
     inlay_hints = { enabled = false },
   },
 }
