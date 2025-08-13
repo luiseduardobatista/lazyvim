@@ -1,10 +1,14 @@
-local active_colorscheme = "tokyonight"
+local active_colorscheme = "rose-pine-main"
 
 return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
-    opts = {},
+    opts = {
+      styles = {
+        transparency = true,
+      },
+    },
     lazy = active_colorscheme ~= "rose-pine",
     priority = (active_colorscheme == "rose-pine") and 1000 or nil,
   },
@@ -31,7 +35,7 @@ return {
   {
     "vague2k/vague.nvim",
     name = "vague",
-    opts = { transparent = false },
+    opts = { transparent = true },
     lazy = active_colorscheme ~= "vague",
     priority = (active_colorscheme == "vague") and 1000 or nil,
   },
@@ -39,6 +43,7 @@ return {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
     opts = {
+      transparent = true,
       colors = { theme = { all = { ui = { bg_gutter = "none" } } } },
       commentStyle = { italic = false },
       functionStyle = {},
@@ -53,6 +58,20 @@ return {
     opts = { flavour = "mocha" },
     lazy = active_colorscheme ~= "catppuccin",
     priority = (active_colorscheme == "catppuccin") and 1000 or nil,
+  },
+  {
+    "sainnhe/gruvbox-material",
+    name = "gruvbox-material",
+    config = function()
+      vim.g.gruvbox_material_background = "hard"
+      vim.g.gruvbox_material_foreground = "material"
+      vim.g.gruvbox_material_enable_italic = 0
+      vim.g.gruvbox_material_disable_italic_comment = 1
+      vim.g.gruvbox_material_transparent_background = 1
+      vim.o.background = "dark"
+    end,
+    lazy = active_colorscheme ~= "gruvbox-material",
+    priority = (active_colorscheme == "gruvbox-material") and 1000 or nil,
   },
   {
     "LazyVim/LazyVim",
