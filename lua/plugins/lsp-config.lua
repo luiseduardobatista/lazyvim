@@ -5,16 +5,6 @@ return {
       signs = false,
     },
     servers = {
-      rust_analyzer = {
-        mason = false,
-        settings = {
-          ["rust-analyzer"] = {
-            diagnostics = {
-              disabled = { "unlinked-file" },
-            },
-          },
-        },
-      },
       gopls = {
         settings = {
           gopls = {
