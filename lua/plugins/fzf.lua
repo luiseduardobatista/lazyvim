@@ -3,7 +3,7 @@ return {
   opts = {
     winopts = {
       preview = {
-        hidden = false,
+        hidden = true,
         layout = "horizontal",
         horizontal = "right:45%",
       },

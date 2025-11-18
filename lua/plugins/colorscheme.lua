@@ -1,4 +1,5 @@
-local active_colorscheme = "rose-pine-main"
+-- local active_colorscheme = "rose-pine-main"
+local active_colorscheme = "kanagawa"
 
 return {
   {
