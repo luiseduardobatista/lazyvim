@@ -217,7 +217,7 @@ return {
 
         return true
       end,
-      write_all_buffers = false, -- write all buffers when the current one meets `condition`
+      write_all_buffers = true, -- write all buffers when the current one meets `condition`
       -- Do not execute autocmds when saving
       -- If you set noautocmd = true, autosave won't trigger an auto format
       -- https://github.com/okuuva/auto-save.nvim/issues/55
