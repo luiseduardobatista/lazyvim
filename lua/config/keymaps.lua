@@ -6,11 +6,6 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("n", "<C-h>", require("smart-splits").move_cursor_left)
-vim.keymap.set("n", "<C-j>", require("smart-splits").move_cursor_down)
-vim.keymap.set("n", "<C-k>", require("smart-splits").move_cursor_up)
-vim.keymap.set("n", "<C-l>", require("smart-splits").move_cursor_right)
-vim.keymap.set("n", "<C-\\>", require("smart-splits").move_cursor_previous)
 
 vim.api.nvim_create_user_command("DeleteBlankLines", function(opts)
   local cmd
